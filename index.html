@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="background-color: bisque;">
+<head>
+  <title>Internship Attendance</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div style="margin-bottom: 60px;">
+    <h1>Internship Attendance</h1>
+    <p style="font-size: 15px;">Attendance system for the interns that keeps the track of intern's attendance, along with the admin feature to
+      add the interns and his/her internship's duration</p>
+  </div>
+  <div style="display: flex;">
+    <div style="display: inline-block; margin-right: 70px;">
+      <div>
+        <label for="personName">Person Name:</label>
+        <input type="text" id="personName" style="margin-right: 10px;" />
+        <label for="startDate">Internship Start Date:</label>
+        <input type="date" id="startDate" style="margin-right: 10px;" />
+        <label for="endDate">Internship End Date:</label>
+        <input type="date" id="endDate" />
+        <button class="custom-button" id="btn" style="display: block; margin-top:10px" onclick="addPerson()">Add
+          Person</button>
+      </div>
+      <div style="margin-top: 70px;">
+        <h2>Mark Attendance:</h2>
+        <p>Enter person's name and click the buttons below:</p>
+        <button class="custom-button" onclick="markAttendance('present')">Mark Present</button>
+        <button class="custom-button" onclick="markAttendance('absent')">Mark Absent</button>
+      </div>
+    </div>
+    <div style="display: inline-block;">
+      <label style="font-weight: bold;">Attendance Viewer:</label>
+      <p>Enter person's name to view attendance:</p>
+      <input type="text" id="attendancePersonName" />
+      <button class="custom-button" onclick="showAttendance()">Show Attendance</button>
+      <textarea id="attendanceViewer" rows="10" cols="50" style="display: block; margin-top: 15px;" readonly></textarea>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

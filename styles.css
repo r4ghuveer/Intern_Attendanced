@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: brown;
+    /* padding-bottom: 50px; */
+  }
+  
+  /* div {
+    margin-bottom: 20px;
+  } */
+  input{
+    margin-left: 15px;
+    /* display: inline; */
+  }
+  
+
+  .custom-button {
+    padding: 10px 20px;
+    background-color: rgb(235, 188, 135);
+    color: #171717;
+    border: none;
+    cursor: pointer; /* Add pointer effect */
+    transition: background-color 1s ease; /* Add smooth transition */
+    transition: font-size 0.5s ease;
+    font-size: 12px;
+  }
+  
+  .custom-button:hover {
+    background-color: brown; /* Change background color on hover */
+    color: white;
+    font-size: 14px;
+    
+  }
+  label, h2{
+    font-size: 15px;
+  }
+  
